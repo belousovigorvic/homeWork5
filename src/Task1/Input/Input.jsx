@@ -28,7 +28,7 @@ class Input extends Component {
         return (
             <div className="inputBlock">
                 {show && <H2>{value}</H2>}
-                <input onChange={this.handleChange} value={this.state.value} type="text"/>
+                <input onChange={this.handleChange} value={value} type="text"/>
                 <button onClick={this.handleClick}>{value !== '' ? (show ? "Hide" : "Show") : "Show"}</button>
             </div>
         )
